@@ -1,0 +1,27 @@
+.Cart-Back{
+    backdrop-filter: blur(10px) !important;
+}
+.Cart-Header{
+    background-color:#0f172a;
+    color:wheat;
+}
+.Cart-Body{
+    background-color:#0f172a;
+    color:wheat;
+}
+.Cart-Body-Border{
+    background-color:#0f172a;
+    color:wheat;
+    border:1px solid white;
+    padding:5px;
+    padding-right:80px;
+    margin-left: 20px;
+}
+.Cart-Footer{
+    background-color:#0f172a !important;
+}
+.total{
+    color: wheat;
+    margin-right:90px !important;
+}
+

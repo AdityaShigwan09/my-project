@@ -1,0 +1,251 @@
+/* html,body{
+  background-image: url(..img/welcome.jpg);
+  background-attachment: fixed;
+} */
+
+.back-yellow {
+  padding: 0;
+  margin:0 !important;
+}
+
+.jumbotron {
+
+  
+  background-color:rgba(0, 0, 0, 0.429);
+  color:white;
+  background-image: url(../img/welcome2.jpg);
+  background-repeat:no-repeat;
+  background-size:90% 700px;
+  background-position: center;
+  background-attachment: fixed;
+  
+  margin-top:10px ;
+  padding-bottom:100px ;
+  padding:50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 60% 40% 80% 20% / 30% 70% 40% 60%;
+
+  
+
+
+}
+
+.text-container {
+  flex: 1;
+  padding: 100px;
+background-color: transparent;
+  border-radius: 60% 40% 50% 50% / 20% 80% 30% 70%; 
+  
+  /* background-image: url(../img/welcome.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center; */
+
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bolder;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.482);
+
+  backdrop-filter: blur(10px);
+
+}
+
+
+.text-container .welcome {
+  font-size: 60px;
+  filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.983));
+  background: linear-gradient(137deg, rgba(253,187,45,1) 43%, rgba(255,154,0,1) 52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:bolder ;
+  text-align:left;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding:50px;
+  border-radius:3px;
+
+
+
+  background-color:transparent;
+  background-image:transparent;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:70%;
+  background-position:250px 0px;
+  margin: 30px;
+  padding:20%;
+  border-radius: 10px;
+  border-radius: 30% 70% 50% 50% / 50% 30% 70% 50%; 
+}
+
+/* Typewriter {
+  font-size:100px;
+  font-weight: bold; 
+  color: white; 
+} */
+
+/* .image-container img{
+  padding: 30px;
+  border-radius: 10px;
+  border-radius:50% 10px 50% 100% / 100% 10px 100%; 
+} */
+
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider .title {
+  font-weight: 400;
+}
+
+.slider li {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Slide transition effects */
+li.current {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Left to Right (Even slides) */
+.slider li:nth-child(odd) {
+  transform: translateX(-100%);
+}
+
+/* Right to Left (Odd slides) */
+.slider li:nth-child(even) {
+  transform: translateX(100%);
+}
+
+/* Animation when active */
+.slider li.current:nth-child(odd) {
+  transform: translateX(0);
+}
+
+.slider li.current:nth-child(even) {
+  transform: translateX(0);
+}
+
+.slider article {
+  width: 40%;
+  color: wheat;
+  z-index: 11;
+  margin-left:55%;
+  margin-top:30%;
+  padding:50px;
+  border-radius:20px 100% 100%   / 10px 100%  0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider article a {
+  color: white;
+  text-decoration: underline;
+}
+
+.slider h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.slider h3 + p {
+  color: var(--lite);
+  font-weight: 300;
+}
+
+.slider aside {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.slider aside button {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+button.current_dot {
+  transform: scale(1.4);
+  background: var(--primary) !important;
+}
+
+@media screen and (max-width: 920px) {
+  .slider-container {
+    height: 70vh;
+  }
+
+  .slider article {
+    width: 90%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .slider h3 {
+    font-size: 2rem;
+  }
+
+  .jumbotron {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    justify-content: center;
+  }
+}

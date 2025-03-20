@@ -1,0 +1,25 @@
+.Card-Back{
+    backdrop-filter: blur(10px) !important;
+}
+.Card-Header{
+    background-color:#0f172a;
+    color:wheat;
+}
+.Card-Body{
+    background-color:#0f172a;
+    color:wheat;
+}
+.Card-Footer{
+    background-color:#0f172a !important;
+}
+.Card-Label{
+    font-weight:bold;
+}
+.Card-Input{
+    background-color:rgb(14, 25, 53) !important;
+    color:wheat !important;
+    margin-left: 50px;
+    border-radius: 20px;
+    border: 1px solid wheat !important;
+}
+

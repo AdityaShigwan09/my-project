@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* background-image: url(../img/welcome.jpg);
+  background-attachment: fixed; */
+  background: rgb(253,187,45);
+  background: linear-gradient(137deg, rgba(253,187,45,1) 43%, rgba(255,154,0,1) 52%);
+}
+
+.App {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
